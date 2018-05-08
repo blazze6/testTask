@@ -1,0 +1,32 @@
+{
+  "name": "TEMPLATE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org:blazze6/template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://google.ru",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-stylus": "^2.3.1",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-watch": "^4.3.5",
+    "gulp.spritesmith": "^6.2.1",
+    "nib": "^1.1.0",
+    "rimraf": "^2.5.2"
+  },
+  "devDependencies": {
+    "rigger": "^0.5.10"
+  }
+}
