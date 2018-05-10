@@ -1,5 +1,5 @@
 {
-  "name": "TEMPLATE",
+  "name": "testTask2GIS",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org:blazze6/template.git"
+    "url": "https://github.com/blazze6/testTask.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://google.ru",
+  "homepage": "",
   "dependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
