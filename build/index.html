@@ -5,15 +5,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Тестовое задание 2ГИС</title>
+	<title>Тест</title>
 </head>
 <body>
 	<div class="background"></div>
 	
 	<div class="cards">
-		<div class="cards__item" data-count="1"></div>
-		<div class="cards__item cards__item--wide" data-count="2"></div>
-		<div class="cards__item cards__item--wide" data-count="3"></div>
+		<script id="cards-template" type="text/x-handlebars-template">
+			{{#each allCards}}
+				<div class="cards__item cards__item--{{type}}" data-count="{{count}}"></div>
+			{{/each}}
+		</script>
 	</div>
 	
 	<script src="js/handlebars-v4.0.11.js"></script>

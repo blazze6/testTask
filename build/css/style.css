@@ -1,7 +1,7 @@
 html {
   width: 100%;
   height: 100%;
-  min-width: 320px;
+  min-width: 520px;
 }
 body {
   width: inherit;
@@ -17,7 +17,6 @@ body {
   color: #000;
 }
 .background {
-  position: relative;
   width: 100%;
   height: 100%;
   background-color: #f6f2de;
@@ -30,13 +29,11 @@ body {
   top: 20px;
   left: 30px;
   box-sizing: border-box;
-  width: calc(960px + 60px);
   height: calc(100% - 40px);
 }
 @media screen and (max-width: 1080px) {
   .cards {
     width: calc(100% - 60px);
-    min-width: 260px;
   }
 }
 .cards__item {
@@ -48,11 +45,6 @@ body {
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
-@media screen and (max-width: 460px) {
-  .cards__item {
-    width: 100%;
-  }
-}
 .cards__item:last-child {
   margin-left: 60px;
 }
@@ -60,8 +52,13 @@ body {
   margin-left: 0;
 }
 .cards__item--wide:last-child {
-  width: calc(100% - 60px);
-  max-width: 960px;
+  width: 960px;
+}
+@media screen and (max-width: 1080px) {
+  .cards__item--wide:last-child {
+    width: calc(100% - 60px);
+    min-width: 400px;
+  }
 }
 .cards__item::after {
   position: absolute;
