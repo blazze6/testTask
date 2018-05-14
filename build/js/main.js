@@ -22,18 +22,21 @@ var mainContent = compiledTemplate({ allCards: cards });
 // Вывод в HTML данных скомпилированного шаблона
 cardsDeck.innerHTML = mainContent;
 
-// Функция, отслеживающая нажатие кнопок Alt и Shift в момент события (клика по контейнеру с карточками)
+// Функция отслеживает нажатие кнопок Alt и Shift в момент события (клика по контейнеру с карточками) и добавляет или удаляет карточки в массиве
 var checkClick = function(event){
+	var cardWide = { type: 'wide' };
+	var cardNarrow = { type: 'narrow' };
+	
 	if(event.altKey === true && event.shiftKey === true)
 		{
-			cards.push({ type: 'wide' });
+			cards.push(cardWide);
 			cards[cards.length - 1].count = cards.length;
 			mainContent = compiledTemplate({ allCards: cards });
 			cardsDeck.innerHTML = mainContent;
 		}
 	else if(event.altKey === false && event.shiftKey === true)
 		{
-			cards.push({ type: 'narrow' });
+			cards.push(cardNarrow);
 			cards[cards.length - 1].count = cards.length;
 			mainContent = compiledTemplate({ allCards: cards });
 			cardsDeck.innerHTML = mainContent;
